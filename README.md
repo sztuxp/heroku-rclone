@@ -32,5 +32,5 @@ six login
 ```
 ### fclone自动化复制
 ```shell
-heroku run "bash configure.sh && fclone -P --transfers=5 copy 6:1 ftp:2"  -a myapp
+heroku run "bash configure.sh && fclone -P copy 1:1 2:1 --drive-server-side-across-configs --stats=1s --stats-one-line -vP --checkers=256 --transfers=256 --drive-pacer-min-sleep=1ms --check-first"  -a myapp
 ```
