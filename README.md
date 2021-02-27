@@ -9,8 +9,9 @@
 ### config
 rclone config文件内容
 ## 运行
-### 连接终端
+### 安装heroku、连接终端
 ```
+curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
 heroku run bash -a myapp
 ```
 ### 运行rclone
